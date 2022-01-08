@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Site Officiel de Booki</title>
+        <!-- StyleSheets-->
+        <link rel="stylesheet" href="CSS_booki/booki.css" />
+        <!--Logo dans l'onglet-->
+        <link rel="icon" type="image/png" href="images/logo/Booki.png" sizes="20x20" />
+        <!--Script font awesome pour chargement des icones-->
+        <script src="https://kit.fontawesome.com/c30a04cbe4.js" crossorigin="anonymous"></script>
+        <!-- Google Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Section Barre de Navigation-->
+        <header>
+            <nav class="BarreNav">
+                <img class="logo" src="images/logo/Booki@3x.png" alt="Logo de Booki" />
+                <ul class="sizeLiens">
+                    <li class="borderNav">
+                        <a class="styleNav" href="#Hebergement">Hébergements</a>
+                    </li>
+                    <li class="borderNav">
+                        <a class="styleNav" href="#Activites">Activités</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+        <!--Section "Rechercher"-->
+            <section class="section1">
+                <div class="styleMobile">
+                    <h1 class="styleTitlePage">Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre ville ou en pleine nature</p>
+                </div>
+                <!--Partie  pour réaliser la recherche de logement / Icone + Formulaire + Boutton-->
+                <div class="borderSearch">
+                    <div class="iconeInformation "><i class="fas fa-map-marker-alt"></i></div>
+                    <form method="post" action="#">
+                        <input class="Search" type="search" placeholder="Ville , Pays" />
+                    </form>
+                    <button class="buttonSearch" type="submit"><span class="mobileNone">Rechercher</span>
+                    <span class="desktopNone"><i class="fas fa-search"></i></span></button>
+                </div>
+                <!-- Partie choix des filtres à appliquer pour la recherche de logements-->
+                <div class="filtres">
+                    <h2>Filtres</h2>
+                    <ul>
+                        <li class="filtres-button1"><i class="fas fa-money-bill-wave icon-filtre"></i>Économique</li>
+                        <li class="filtres-button2"><i class="fas fa-child icon-filtre"></i>Familial</li>
+                        <li class="filtres-button3"><i class="fas fa-heart icon-filtre"></i>Romantique</li>
+                        <li class="filtres-button4"><i class="fas fa-dog icon-filtre"></i>Animaux autorisés</li>
+                    </ul>
+                </div>
+                <!--Partie information sur le nombre de logements disponibles sur la ville choisie-->
+                <div class="info">
+                    <div class="parentIcon"><i class="fas fa-info fa-xs"></i></div>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </section>
+
+            <!-- Partie Hebergement Marseille avec les 6 cartes (image + texte cliquables + effet grossisant au survol de la souris au CSS) -->
+            <section class="blocs">
+                <!-- Contaigner des 6 cartes (images + texte/prix + avis)-->
+                <article class="blocHebergement">
+                    <h2 id="Hebergement">Hébergements à Marseille</h2>
+                    <!-- Premier Bloc contenant les 3 images de la première ligne -->
+                    <div class="bloc1">
+                        <!-- Carte 1 -->
+                        <div class="cubeHebergement">
+                            <a href="#">
+                                <img class="imgHebergement1" src="images/hebergements/4_small/auberge_la_cannebiere.jpg" alt="Auberge de la Cannebiere" />
+                                <div class="cubeDetailHebergement">
+                                    <h3 class="styleTitleHebergement">Auberge La Cannebière</h3>
+                                    <p>Nuit à partir de <span class="prix">25&#8364;</span></p>
+                                    <div class="styleStar">
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarGrey"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Carte 2 -->
+                        <div class="cubeHebergement">
+                            <a href="#">
+                                <img class="imgHebergement2" src="images/hebergements/4_small/hotel_du_port.jpg" alt="Hôtel du Port" />
+                                <div class="cubeDetailHebergement">
+                                    <h3 class="styleTitleHebergement">Hôtel du port</h3>
+                                    <p>Nuit à partir de <span class="prix">52&#8364;</span></p>
+                                    <div class="styleStar">
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Carte 3 -->
+                        <div class="cubeHebergement">
+                            <a href="#">
+                                <img class="imgHebergement3" src="images/hebergements/4_small/hotel_les_mouettes.jpg" alt="Hôtel les Mouettes" />
+                                <div class="cubeDetailHebergement">
+                                    <h3 class="styleTitleHebergement">Hôtel Les mouettes</h3>
+                                    <p>Nuit à partir de <span class="prix">76&#8364;</span></p>
+                                    <div class="styleStar">
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarGrey"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Deuxième Bloc contenant les 3 images de la seconde ligne à l'horizontale -->
+                    <div class="bloc2">
+                        <!-- Carte 1 -->
+                        <div class="cubeHebergement">
+                            <a href="#">
+                                <img class="imgHebergement4" src="images/hebergements/4_small/hotel_de_la_mer.jpg" alt="Hôtel de la Mer" />
+                                <div class="cubeDetailHebergement">
+                                    <h3 class="styleTitleHebergement">Hôtel de la mer</h3>
+                                    <p>Nuit à partir de <span class="prix">46&#8364;</span></p>
+                                    <div class="styleStar">
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarGrey"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Carte 2 -->
+                        <div class="cubeHebergement">
+                            <a href="#">
+                                <img class="imgHebergement5" src="images/hebergements/4_small/auberge_le_panier.jpg" alt="Auberge le Panier" />
+                                <div class="cubeDetailHebergement">
+                                    <h3 class="styleTitleHebergement">Auberge Le Panier</h3>
+                                    <p>Nuit à partir de <span class="prix">23&#8364;</span></p>
+                                    <div class="styleStar">
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarGrey"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Carte 3 -->
+                        <div class="cubeHebergement">
+                            <a href="#">
+                                <img class="imgHebergement6" src="images/hebergements/4_small/hotel_chez_amina.jpg" alt="Hôtel chez Amina" />
+                                <div class="cubeDetailHebergement">
+                                    <h3 class="styleTitleHebergement">Hôtel chez Amina</h3>
+                                    <p>Nuit à partir de <span class="prix">96&#8364;</span></p>
+                                    <div class="styleStar">
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarGrey"></div>    
+                                    </div>
+                                </div>
+                            </a>    
+                        </div>
+                    </div>
+                    <!-- Zone Cliquable sous les images pour affichier plus de résultat -->
+                    <div class="styleTabletteOpenmore">
+                        <button class="Openmore" type="button">Afficher plus</button>
+                    </div>
+                </article>
+
+                <!-- Partie les plus Populaires avec 3 cartes (image + texte cliquable +effet grossisant au survol de la souris au CSS)-->
+                <aside class="blocPopulaires">
+                    <!-- Bloc Titre Populaire + Icone -->
+                    <div class="blocTitrePopulaire">
+                        <h2 id="TitrePopulaire" class="TitrePopulaire">Les plus populaires</h2>
+                        <div><i id="chart" class="fas fa-chart-line fa-2x"></i></div>
+                    </div>
+                    <!-- Contaigner des 3 cartes (images + texte/prix + avis)-->
+                    <div class="cardsPopulaires">
+                        <!--Carte 1-->
+                        <div class="tabletteStyle">
+                            <a href="#" class="blocPopulaires12 cubePopulaires">
+                                <img class="imgPopulaire1" src="images/hebergements/4_small/hotel_le_soleil_du_matin.jpg" alt="Hôtel le soleil du matin" />
+                                <div class="cubeDetailPopulaire1">
+                                    <h3 class="styleTitlePopulaire">Hôtel le soleil du <br>matin</h3>
+                                    <p>Nuit à partir de <span class="prix">128&#8364;</span></p>
+                                    <div class="styleStar">
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--Carte 2-->
+                        <div class="tabletteStyle">
+                            <a href="#" class="blocPopulaires12 cubePopulaires">
+                                <img class="imgPopulaire2" src="images/hebergements/4_small/au_coeur_de_leau.jpg" alt="Chambre d'Hôtes au Coeur de l'Eau" />
+                                <div class="cubeDetailPopulaire2">
+                                    <h3 class="styleTitlePopulaire">Au coeur de l'eau <br>Chambres d'hôtes</h3>
+                                    <p>Nuit à partir de <span class="prix">71&#8364;</span></p>
+                                    <div class="styleStar">
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarGrey"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--Carte 3-->
+                        <div class="tabletteStyle">
+                            <a href="#" class="cubePopulaires">
+                                <img class="imgPopulaire3" src="images/hebergements/4_small/hotel_tout_bleu_et_blanc.jpg" alt="Hôtel tout bleu et Blanc" />
+                                <div class="cubeDetailPopulaire3">
+                                    <h3 class="styleTitlePopulaire">Hôtel Tout bleu et <br>Blanc</h3>
+                                    <p>Nuit à partir de <span class="prix">68&#8364;</span></p>
+                                    <div class="styleStar">
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarBlue"></div>
+                                        <div class="fas fa-star colorStarGrey"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+
+            <!--- Partie Activités à Marseille avec 6 cartes (image + texte + effet grossisant au survol de la souris au CSS)-->
+            <section class="activites">
+                <h2 id="Activites">Activités à Marseille</h2>
+                <!--Container des 4 cubes dont 2 avec une carte et 2 avec deux cartes-->
+                <div class="blocActivites">
+                    <!--Carte 1 cube 1-->
+                    <div class="cubeActivites14">
+                        <a href="#">
+                            <img class="imgActivite1" src="images/activites/3_medium/vieux_port.jpg" alt="Le Vieux Port" />
+                            <div class="titreActivites">
+                                <h3 class="styleTitreActivites">Vieux Port</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Cube 2-->
+                    <div class="blocActivites2356">
+                        <!--Carte 2 cube 2-->  
+                        <div class="cubeActivites2">
+                            <a href="#">
+                                <img class="imgActivite2" src="images/activites/4_small/fort_de_pomegues.jpg" alt="Le Fort de Pomègues" />
+                                <div class="titreActivites">
+                                    <h3 class="styleTitreActivites">Fort de Pomègues</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <!--Carte 3 cube 2-->
+                        <div class="cubeActivites3">
+                            <a href="#">
+                                <img class="imgActivite3" src="images/activites/4_small/iles_du_frioul.jpg" alt="Les Îles du Frioul" />
+                                <div class="titreActivites">
+                                    <h3 class="styleTitreActivites">Îles du Frioul</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Carte 4 cube 3-->
+                    <div class="cubeActivites14">
+                        <a href="#">
+                            <img class="imgActivite4" src="images/activites/3_medium/parc_national_des_calanques.jpg" alt="Le Parc National des Calanques" />
+                            <div class="titreActivites">
+                                <h3 class="styleTitreActivites">Parc National des Calanques</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <!--Cube 4-->
+                    <div class="blocActivites2356">
+                        <!--Carte 5 cube 4-->
+                        <div class="cubeActivites5">
+                            <a href="#">
+                                <img class="imgActivite5" src="images/activites/4_small/notre_dame_de_la_garde.jpg" alt="La Basilique Notre-Dame-de-la-Garde" />
+                                <div class="titreActivites">
+                                    <h3 class="styleTitreActivites">Notre-Dame-de-la-Garde</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <!--Carte 6 cube 4-->
+                        <div class="cubeActivites6">
+                            <a href="#">
+                                <img class="imgActivite6" src="images/activites/4_small/parc_longchamp.jpg" alt="Le Parc Longchamp" />
+                                <div class="titreActivites">
+                                    <h3 class="styleTitreActivites">Parc Longchamp</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>    
+                </div>
+            </section>
+        </main>
+            <!-- Partie Footer-->
+        <footer>
+            <!-- Contaigner des trois blocs-->  
+            <div class="footerBlocs">
+                <!-- Partie Colonne "A propos"-->
+                <div class="footerBloc margeBlocFoot1">
+                    <h3 class="footerTitle">A propos</h3>
+                    <a class="footerLink" href="#">Fonctionnement du site</a>
+                    <a class="footerLink" href="#">Conditions Générales de vente</a>
+                    <a class="footerLink" href="#">Données et confidentialité</a>
+                </div>
+                <!-- Partie Colonne "Nos hébergements"-->
+                <div class="footerBloc margeBlocFoot2">
+                    <h3 class="footerTitle">Nos Hébergements</h3>
+                    <a class="footerLink" href="#">Charte qualité</a>
+                    <a class="footerLink" href="#">Soumettre votre hôtel</a>
+                </div>
+                <!-- Partie Colonne "Assistance"-->
+                <div class="footerBloc margeBlocFoot3">
+                    <h3 class="footerTitle">Assistance</h3>
+                    <a class="footerLink" href="#">Centre d'aide</a>
+                    <a class="footerLink" href="mailto:matthias.garnier@outlook.fr">Nous contacter</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
